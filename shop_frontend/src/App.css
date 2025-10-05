@@ -1,0 +1,89 @@
+.app-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-container input {
+  width: 40%;
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-container button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.filter-container button.active {
+  background: #020d35;
+  color: white;
+}
+
+.filter-container button:hover {
+  background: #aaa;
+  color: white;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding: 1rem;
+}
+
+/* Cart button container fixed at top-right */
+.cart-container {
+  position: absolute;
+  top: 2.3rem;
+  right: 3rem;
+  z-index: 1000;
+}
+
+/* Cart button styling */
+.cart-button {
+  background-color: #020d35;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+/* Mini cart popup */
+.cart-popup {
+  position: absolute;
+  top: 3.5rem; /* below the button */
+  right: 0;
+  width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+
