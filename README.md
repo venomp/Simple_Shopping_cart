@@ -146,6 +146,19 @@ Example request and response:
 
 <img width="1920" height="1080" alt="Screenshot from 2025-10-05 20-05-46" src="https://github.com/user-attachments/assets/131aa7f8-8ea5-4eee-a0e4-7c8b9436ccb0" />
 
+🧠 Design Choices & Assumptions
+
+React Context API – used to manage global cart state without external libraries like Redux.
+Keeps the state predictable and accessible across components (e.g., ProductCard → Cart).
+
+DTO Layer in Spring Boot – separates the business logic from the API response model.
+Provides clean and structured data transfer between backend and frontend.
+
+Service Layer Abstraction – all logic (like fetching products, adding to cart) is inside service/ classes for scalability and testability.
+
+Static Product Data – products are currently stored in memory (for demonstration).
+In a production system, this would be fetched from a database.
+
 
 
 
